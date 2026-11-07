@@ -3,184 +3,200 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Aris Suharyadi, S.Pd., M.Pd. – Dosen Administrasi Pendidikan UNY</title>
-<meta name="description" content="Situs pribadi Aris Suharyadi, dosen Departemen Administrasi Pendidikan Universitas Negeri Yogyakarta. Riset tentang resiliensi kepala sekolah, manajemen sekolah dasar, dan evaluasi program pendidikan.">
+<title>Aris Suharyadi, S.Pd., M.Pd. – Portofolio Dosen UNY</title>
+<meta name="description" content="Portofolio kinerja Aris Suharyadi, dosen Departemen Administrasi Pendidikan UNY, 2019 hingga sekarang: pengajaran, penelitian, pengabdian, dan HAKI.">
 <meta property="og:title" content="Aris Suharyadi, S.Pd., M.Pd.">
-<meta property="og:description" content="Dosen Administrasi Pendidikan UNY. Resiliensi kepala sekolah, manajemen sekolah dasar, evaluasi program pendidikan.">
+<meta property="og:description" content="Portofolio dosen Administrasi Pendidikan UNY: pengajaran, penelitian, pengabdian, HAKI.">
 <meta property="og:image" content="foto-aris.jpg">
 <style>
-:root{
-  --bg:#f4f6f5; --surface:#ffffff; --ink:#17231f; --muted:#52605a; --line:#d9e0dc;
-  --accent:#1f5a46; --accent-ink:#ffffff; --mark:#b7791f;
-}
-@media (prefers-color-scheme:dark){
-  :root:not([data-theme="light"]){
-    --bg:#101815; --surface:#17221e; --ink:#e8efeb; --muted:#9db0a7; --line:#2b3b35;
-    --accent:#6fc3a0; --accent-ink:#0d1a15; --mark:#e0aa4f;
-  }
-}
+:root{--bg:#f7f8fa;--surface:#fff;--ink:#1a2233;--muted:#566074;--line:#dde2ea;--accent:#1f3556;--accent-ink:#fff;
+--ajar:#2a7f8e;--riset:#1f3556;--abdi:#3f7d58;--haki:#9a7633}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1520;--surface:#162030;--ink:#e9edf3;--muted:#9aa7bb;--line:#27344a;--accent:#a9c1e6;--accent-ink:#0f1520;
+--ajar:#6cc4d3;--riset:#a9c1e6;--abdi:#82c79c;--haki:#d4b06a}}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:4.5rem}
-body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
 a{color:var(--accent);text-underline-offset:3px}
-a:focus-visible,button:focus-visible{outline:3px solid var(--mark);outline-offset:3px;border-radius:4px}
-.wrap{max-width:1040px;margin:0 auto;padding:0 1.25rem}
+a:focus-visible,button:focus-visible{outline:3px solid var(--haki);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1000px;margin:0 auto;padding:0 1.25rem}
 header.nav{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
-header.nav .wrap{display:flex;gap:1.5rem;align-items:center;justify-content:space-between;min-height:3.5rem;flex-wrap:wrap}
+header.nav .wrap{display:flex;align-items:center;justify-content:space-between;min-height:3.5rem;gap:1rem;flex-wrap:wrap}
 .brand{font-weight:700;color:var(--ink);text-decoration:none}
 nav a{color:var(--muted);text-decoration:none;margin-left:1.1rem;font-size:.95rem}
 nav a:hover{color:var(--accent)}
-.hero{display:grid;grid-template-columns:1.25fr .75fr;gap:3rem;align-items:center;padding:4rem 0 3.5rem}
-.hero h1{font-size:clamp(2.2rem,5.5vw,3.6rem);line-height:1.08;margin:0 0 .6rem;letter-spacing:-.02em}
-.hero .role{font-size:1.15rem;color:var(--muted);margin:0 0 1.4rem}
-.hero p.lead{font-size:1.15rem;max-width:34rem;margin:0 0 1.8rem}
-.btns{display:flex;gap:.75rem;flex-wrap:wrap}
-.btn{display:inline-block;padding:.7rem 1.2rem;border-radius:6px;font-weight:600;text-decoration:none;border:2px solid var(--accent)}
-.btn.primary{background:var(--accent);color:var(--accent-ink)}
-.btn.ghost{color:var(--accent)}
-.photo{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:10px;border:1px solid var(--line);display:block}
-section{padding:3rem 0;border-top:1px solid var(--line)}
-.row{display:grid;grid-template-columns:200px 1fr;gap:2rem}
-h2{font-size:1.35rem;margin:0;letter-spacing:-.01em}
-.row>div>:first-child{margin-top:0}
-ul.plain{list-style:none;margin:0;padding:0}
-ul.plain li{padding:.55rem 0;border-bottom:1px solid var(--line)}
-ul.plain li:last-child{border-bottom:0}
-.tags{display:flex;flex-wrap:wrap;gap:.5rem;padding:0;list-style:none;margin:0}
-.tags li{background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:.35rem .9rem}
-.pub{display:grid;grid-template-columns:3.2rem 1fr;gap:.75rem;padding:.8rem 0;border-bottom:1px solid var(--line)}
-.pub:last-child{border-bottom:0}
-.pub .yr{color:var(--mark);font-weight:700;font-variant-numeric:tabular-nums}
-.pub .t{font-weight:600}
-.pub .m{color:var(--muted);font-size:.93rem}
-h3{font-size:1.02rem;margin:1.8rem 0 .3rem}
-h3:first-child{margin-top:0}
-footer{border-top:1px solid var(--line);padding:2rem 0 3rem;color:var(--muted);font-size:.92rem}
+.hero{display:grid;grid-template-columns:1fr 220px;gap:3rem;align-items:center;padding:3.5rem 0 2.5rem}
+.hero h1{font-size:clamp(2.1rem,5.2vw,3.4rem);line-height:1.08;margin:0 0 .5rem;letter-spacing:-.02em}
+.role{color:var(--muted);font-size:1.1rem;margin:0 0 1.2rem}
+.lead{font-size:1.1rem;max-width:34rem;margin:0 0 1.5rem}
+.btn{display:inline-block;padding:.65rem 1.15rem;border-radius:6px;font-weight:600;text-decoration:none;border:2px solid var(--accent);margin:0 .6rem .5rem 0}
+.btn.p{background:var(--accent);color:var(--accent-ink)}
+.photo{width:100%;max-width:220px;aspect-ratio:4/5;object-fit:cover;object-position:50% 20%;border-radius:110px 110px 10px 10px;border:1px solid var(--line);justify-self:end;display:block}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:10px;overflow:hidden;margin-bottom:3.5rem}
+.stats div{background:var(--surface);padding:1rem 1.1rem}
+.stats b{display:block;font-size:1.9rem;line-height:1.1;color:var(--accent)}
+.stats span{color:var(--muted);font-size:.9rem}
+h2{font-size:1.5rem;margin:0 0 .3rem;letter-spacing:-.01em}
+.sub{color:var(--muted);margin:0 0 1.2rem}
+.chips{position:sticky;top:3.5rem;z-index:4;background:var(--bg);display:flex;gap:.5rem;flex-wrap:wrap;padding:.7rem 0;border-bottom:1px solid var(--line)}
+.chip{font:inherit;font-size:.93rem;cursor:pointer;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:.35rem .9rem}
+.chip[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.chip i{font-style:normal;opacity:.7;margin-left:.3rem}
+.yr{display:grid;grid-template-columns:110px 1fr;gap:1.5rem;padding:1.6rem 0;border-bottom:1px solid var(--line)}
+.yr>h3{font-size:2.1rem;line-height:1;margin:0;color:var(--muted);font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.note{margin:0 0 .8rem;color:var(--muted);font-style:italic}
+.it{padding:.55rem 0 .55rem 1rem;border-left:3px solid var(--c);margin-bottom:.7rem}
+.it .t{font-weight:600}
+.it .m{color:var(--muted);font-size:.93rem}
+.tag{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.02em;color:var(--c);border:1px solid var(--c);border-radius:4px;padding:0 .4rem;margin-right:.5rem;vertical-align:.1em}
+.ajar{--c:var(--ajar)}.riset{--c:var(--riset)}.abdi{--c:var(--abdi)}.haki{--c:var(--haki)}
+section.bg{padding:3.5rem 0 1rem}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem}
+h3.s{font-size:1.02rem;margin:0 0 .4rem}
+ul.pl{list-style:none;margin:0 0 1.5rem;padding:0}
+ul.pl li{padding:.45rem 0;border-bottom:1px solid var(--line)}
+footer{margin-top:3rem;border-top:1px solid var(--line);padding:2rem 0 3rem;color:var(--muted);font-size:.92rem}
 @media (max-width:760px){
-  .hero{grid-template-columns:1fr;gap:2rem;padding-top:2.5rem}
-  .photo{max-width:320px}
-  .row{grid-template-columns:1fr;gap:1rem}
-  nav a:first-child{margin-left:0}
-}
+.hero{grid-template-columns:1fr;gap:1.8rem;padding-top:2.2rem}.photo{max-width:170px;justify-self:start}
+.stats{grid-template-columns:repeat(2,1fr)}.yr{grid-template-columns:1fr;gap:.6rem}.yr>h3{font-size:1.7rem}.two{grid-template-columns:1fr;gap:0}
+.chips{top:3.4rem}}
+button.btn{font:inherit;cursor:pointer;background:transparent;color:var(--accent)}
+.print-only{display:none}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media print{
+:root,:root:not([data-theme="light"]){--bg:#fff;--surface:#fff;--ink:#111;--muted:#444;--line:#bbb;--accent:#1f3556;--haki:#8a6a2c}
+@page{margin:15mm}
+html,body{background:#fff;color:#111}
+body{font-size:10.5pt;line-height:1.45}
+header.nav,.hero,.stats,#portofolio,#kontak,footer{display:none!important}
+.print-only{display:block}
+main.wrap{max-width:none;padding:0}
+#cvhead h1{font-size:20pt;margin:0 0 2pt}
+#cvhead p{margin:0;color:#444}
+#cvhead .cvline{margin-top:4pt;font-size:9.5pt}
+#cvhead{border-bottom:2px solid #1f3556;padding-bottom:8pt;margin-bottom:6pt}
+section.bg{padding:10pt 0 0;border:0}
+h2{font-size:13pt;color:#1f3556;border-bottom:1px solid #bbb;padding-bottom:2pt;margin:12pt 0 6pt}
+.two{display:block}
+h3.s{font-size:10.5pt;margin:8pt 0 2pt}
+ul.pl li{padding:2pt 0;border-bottom:0}
+ul.pl{margin:0 0 4pt}
+.cvrow{display:grid;grid-template-columns:34pt 1fr;gap:8pt;margin:0 0 4pt;break-inside:avoid}
+.cvrow .cy{font-weight:700;color:#1f3556}
+.cvrow .ct{font-weight:600}
+.cvrow .cm{color:#444;font-size:9.5pt}
+#cvlist h2{break-after:avoid}
+}
 </style>
 </head>
 <body>
 <header class="nav"><div class="wrap">
-  <a class="brand" href="#beranda">Aris Suharyadi</a>
-  <nav aria-label="Navigasi utama">
-    <a href="#tentang">Tentang</a><a href="#riset">Riset</a><a href="#publikasi">Publikasi</a><a href="#mengajar">Mengajar</a><a href="#kontak">Kontak</a>
-  </nav>
+<a class="brand" href="#atas">Aris Suharyadi</a>
+<nav aria-label="Navigasi utama"><a href="#portofolio">Portofolio</a><a href="#latar">Latar belakang</a><a href="#kontak">Kontak</a></nav>
 </div></header>
 
-<main>
-<div class="wrap" id="beranda">
-  <div class="hero">
-    <div>
-      <h1>Aris Suharyadi, S.Pd., M.Pd.</h1>
-      <p class="role">Dosen Departemen Administrasi Pendidikan, Universitas Negeri Yogyakarta</p>
-      <p class="lead">Saya meneliti bagaimana kepala sekolah bertahan dan memimpin di tengah tekanan, bagaimana sekolah dasar dikelola, dan bagaimana program pendidikan dievaluasi.</p>
-      <div class="btns">
-        <a class="btn primary" href="#publikasi">Lihat publikasi</a>
-        <a class="btn ghost" href="mailto:arisuharyadi@uny.ac.id">Kirim email</a>
-      </div>
-    </div>
-    <img class="photo" src="foto-aris.jpg" alt="Foto Aris Suharyadi" width="720" height="900">
-  </div>
-
-  <section id="tentang"><div class="row">
-    <h2>Tentang</h2>
-    <div>
-      <p>Saya dosen di Departemen Administrasi Pendidikan UNY sejak 2019 dengan jabatan akademik Lektor. Pendidikan S1, S2, dan S3 saya tempuh di UNY, di bidang administrasi dan manajemen pendidikan.</p>
-      <h3>Pendidikan</h3>
-      <ul class="plain">
-        <li><b>S3 Manajemen Pendidikan</b>, Universitas Negeri Yogyakarta (sedang menempuh)</li>
-        <li><b>S2 Manajemen Pendidikan</b>, Universitas Negeri Yogyakarta, 2013</li>
-        <li><b>S1 Administrasi Pendidikan</b>, Universitas Negeri Yogyakarta, 2012</li>
-      </ul>
-      <h3>Sertifikasi dan pelatihan</h3>
-      <ul class="plain">
-        <li>Sertifikat Pendidik (Dosen), 2025</li>
-        <li>Pelatihan Pendidikan Jarak Jauh, SEAMOLEC, 2024</li>
-        <li>Sertifikat Kewirausahaan, 2024</li>
-      </ul>
-    </div>
-  </div></section>
-
-  <section id="riset"><div class="row">
-    <h2>Minat riset</h2>
-    <div>
-      <ul class="tags">
-        <li>Resiliensi kepala sekolah</li>
-        <li>Manajemen sekolah dasar</li>
-        <li>Evaluasi program pendidikan</li>
-      </ul>
-      <h3>Kolaborasi dan karya</h3>
-      <ul class="plain">
-        <li>Penelitian kerja sama internasional Indonesia–Malaysia tentang evaluasi kinerja kepala sekolah kejuruan, 2020</li>
-        <li>Penelitian kerja sama internasional universitas tentang kepuasan pengguna sistem informasi manajemen pendidikan daring, 2022</li>
-        <li>Hak cipta “Tabok” dan “Teh Manantu”, 2024</li>
-      </ul>
-      <p>Profil lengkap tersedia di <a href="https://sinta.kemdiktisaintek.go.id/authors/profile/6691529/?view=scopus" rel="noopener">SINTA</a>.</p>
-    </div>
-  </div></section>
-
-  <section id="publikasi"><div class="row">
-    <h2>Publikasi pilihan</h2>
-    <div>
-      <h3>Artikel jurnal</h3>
-      <div class="pub"><span class="yr">2025</span><div><div class="t"><a href="https://jurnal.uny.ac.id/index.php/didaktika/article/view/88490/24000" rel="noopener">Unique Impact of Library Services Based On Timezone: Case Study in SDIT Alam Nurul Islam Sleman</a></div><div class="m">DIDAKTIKA: Jurnal Pendidikan Sekolah Dasar · Co-author</div></div></div>
-      <div class="pub"><span class="yr">2025</span><div><div class="t"><a href="https://rsisinternational.org/journals/ijriss/Digital-Library/volume-9-issue-3s/4357-4368.pdf" rel="noopener">Knowledge Sharing Practices and Their Impact on Polytechnic Lecturers’ Job Performance in Malaysia: A Scoping Review</a></div><div class="m">International Journal of Research and Innovation in Social Science · Co-author</div></div></div>
-      <div class="pub"><span class="yr">2024</span><div><div class="t"><a href="https://doi.org/10.20885/millah.vol23.iss1.art11" rel="noopener">School’s Performance Evaluation in Indonesia and Malaysia: Some Notes from Islamic Education’s Perspective</a></div><div class="m">Millah: Journal of Religious Studies 23(1), 331–374 · Co-author · Scopus</div></div></div>
-      <div class="pub"><span class="yr">2024</span><div><div class="t"><a href="https://www.jurnal.yaspenosumatera.org/index.php/mejuajua/article/view/108" rel="noopener">Pelatihan Peningkatan Kapabilitas Lembaga dalam Menghadapi Kurikulum Merdeka</a></div><div class="m">Mejuajua: Jurnal Pengabdian pada Masyarakat 3(3), 9–20 · Co-author</div></div></div>
-      <div class="pub"><span class="yr">2023</span><div><div class="t"><a href="https://doi.org/10.11591/ijere.v12i3.24040" rel="noopener">Developing a digital learning environment team-based project to support online learning in Indonesia</a></div><div class="m">International Journal of Evaluation and Research in Education 12(3), 1599–1608 · Co-author · Scopus</div></div></div>
-      <div class="pub"><span class="yr">2023</span><div><div class="t"><a href="https://doi.org/10.21831/jamp.v11i2.69558" rel="noopener">Evaluasi Kampus Mengajar: Studi Kasus Konversi SKS di Jurusan Administrasi Pendidikan Universitas Negeri Yogyakarta</a></div><div class="m">Jurnal Akuntabilitas Manajemen Pendidikan 11(2), 81–91 · First author</div></div></div>
-      <div class="pub"><span class="yr">2022</span><div><div class="t"><a href="http://dx.doi.org/10.32934/jmie.v6i2.493" rel="noopener">Strategi Eksistensi Madrasah Ibtidaiyah (MI) Swasta di Tengah Kebijakan Zonasi</a></div><div class="m">Journal of Madrasah Ibtidaiyah Education 6(2), 263–276 · First author</div></div></div>
-      <div class="pub"><span class="yr">2021</span><div><div class="t"><a href="https://doi.org/10.24246/j.jk.2021.v8.i1.p34-48" rel="noopener">Strategi Dosen dalam Manajemen E-Learning guna Meningkatkan Hasil Belajar Mahasiswa di Perguruan Tinggi</a></div><div class="m">Kelola: Jurnal Manajemen Pendidikan 8(1), 34–48 · Co-author</div></div></div>
-      <div class="pub"><span class="yr">2021</span><div><div class="t"><a href="https://doi.org/10.29303/jipp.v6i4.343" rel="noopener">Studi Komparatif Pelaksanaan Pembelajaran Berbasis Projek pada Sekolah Menengah di Kota Mataram dan Lombok Barat</a></div><div class="m">Jurnal Ilmiah Profesi Pendidikan 6(4), 705–710 · Co-author</div></div></div>
-      <div class="pub"><span class="yr">2020</span><div><div class="t"><a href="https://doi.org/10.21831/jump.v2i2.33747" rel="noopener">Manajemen Sarana Prasarana di Sekolah Dasar Negeri 1 Kota Prabumulih</a></div><div class="m">Jurnal Manajemen Pendidikan 2(2), 168–177 · Co-author</div></div></div>
-
-      <h3>Prosiding internasional</h3>
-      <div class="pub"><span class="yr">2024</span><div><div class="t"><a href="https://www.atlantis-press.com/proceedings/icei-24/126009664" rel="noopener">Development Of An Information System For Reporting Complaints About Infrastructure Facilities</a></div><div class="m">8th International Conference on Education Innovation (ICEI 2024) · First author</div></div></div>
-      <div class="pub"><span class="yr">2022</span><div><div class="t"><a href="https://doi.org/10.2991/978-2-494069-67-1_13" rel="noopener">The Determinant Factors on User Satisfaction in Assessing the Quality of Online Education Management Information System</a></div><div class="m">9th International Conference on Education Research and Innovation (ICERI 2021) · Co-author</div></div></div>
-      <div class="pub"><span class="yr">2022</span><div><div class="t"><a href="http://proceedings.upi.edu/index.php/ICREAM/article/view/2773" rel="noopener">Academic Supervision By School Principal To Maintain School Excellency During Covid-19 Pandemic in Junior High School 5 Yogyakarta</a></div><div class="m">International Conference on Research of Educational Administration and Management (ICREAM) · Co-author</div></div></div>
-
-      <h3>Buku</h3>
-      <div class="pub"><span class="yr">2021</span><div><div class="t">Manajemen Perpustakaan Sekolah: Teori dan Praktik</div><div class="m">Pena Persada · ISBN 978-623-315-674-5</div></div></div>
-      <div class="pub"><span class="yr">2021</span><div><div class="t">Pengembangan dan Penyelenggaraan Inovasi Pembelajaran Digital (IPD)</div><div class="m">Widina Media Utama · ISBN 9786236457511</div></div></div>
-    </div>
-  </div></section>
-
-  <section id="mengajar"><div class="row">
-    <h2>Mengajar dan pelayanan</h2>
-    <div>
-      <h3>Mata kuliah</h3>
-      <ul class="plain">
-        <li>Teori Administrasi dan Manajemen Pendidikan (S1)</li>
-        <li>Penulisan Karya Ilmiah</li>
-      </ul>
-      <p>Saya juga telah membimbing 11 skripsi mahasiswa S1 Administrasi Pendidikan.</p>
-      <h3>Pelayanan akademik</h3>
-      <ul class="plain">
-        <li>Anggota Pusat Data dan Informasi Fakultas, UNY, 2024</li>
-        <li>Anggota panitia KONASPI, UNESA, 2024</li>
-        <li>Panitia FIP-JIP, UNY, 2023</li>
-        <li>Anggota Tim Penjaminan Mutu Fakultas, UNY, 2020</li>
-      </ul>
-    </div>
-  </div></section>
-
-  <section id="kontak"><div class="row">
-    <h2>Kontak</h2>
-    <div>
-      <p>Untuk kolaborasi riset, undangan narasumber, atau pertanyaan seputar bimbingan, silakan kirim email.</p>
-      <p><a class="btn primary" href="mailto:arisuharyadi@uny.ac.id">arisuharyadi@uny.ac.id</a></p>
-      <p>Departemen Administrasi Pendidikan, Universitas Negeri Yogyakarta</p>
-    </div>
-  </div></section>
+<main class="wrap" id="atas">
+<div class="print-only" id="cvhead"><h1>Aris Suharyadi, S.Pd., M.Pd.</h1><p>Dosen Departemen Administrasi Pendidikan, Universitas Negeri Yogyakarta</p><p class="cvline">arisuharyadi@uny.ac.id · arisuharyadi.github.io · SINTA: sinta.kemdiktisaintek.go.id/authors/profile/6691529</p></div>
+<div class="hero">
+<div>
+<h1>Aris Suharyadi, S.Pd., M.Pd.</h1>
+<p class="role">Dosen Departemen Administrasi Pendidikan, Universitas Negeri Yogyakarta</p>
+<p class="lead">Meneliti resiliensi kepala sekolah, manajemen sekolah dasar, dan evaluasi program pendidikan. Halaman ini merangkum kinerja saya dari tahun ke tahun sejak 2019.</p>
+<a class="btn p" href="#portofolio">Lihat portofolio</a><button class="btn" type="button" onclick="window.print()">Unduh CV (PDF)</button><a class="btn" href="https://sinta.kemdiktisaintek.go.id/authors/profile/6691529/?view=scopus" rel="noopener">Profil SINTA</a>
 </div>
+<img class="photo" src="foto-aris.jpg" alt="Foto Aris Suharyadi" width="720" height="900">
+</div>
+
+<div class="stats" id="stats"></div>
+
+<section id="portofolio">
+<h2>Portofolio kinerja</h2>
+<p class="sub">Urut dari tahun terbaru ke 2019. Pilih kategori untuk menyaring.</p>
+<div class="chips" id="chips" role="group" aria-label="Saring kategori"></div>
+<div id="list"><noscript>Aktifkan JavaScript untuk melihat portofolio.</noscript></div>
+</section>
+
+<section class="bg" id="latar">
+<h2>Latar belakang</h2>
+<div class="two" style="margin-top:1.2rem">
+<div>
+<h3 class="s">Pendidikan</h3>
+<ul class="pl">
+<li><b>S3 Manajemen Pendidikan</b>, Universitas Negeri Yogyakarta (sedang menempuh)</li>
+<li><b>S2 Manajemen Pendidikan</b>, Universitas Negeri Yogyakarta, 2013</li>
+<li><b>S1 Administrasi Pendidikan</b>, Universitas Negeri Yogyakarta, 2012</li>
+</ul>
+<h3 class="s">Sertifikasi dan pelatihan</h3>
+<ul class="pl"><li>Pelatihan AI Microsoft Elevate: Desain Pembelajaran Abad ke-21 (16 JP), Microsoft Indonesia, 2026</li><li>Sertifikat Pendidik (Dosen), 2025</li><li>Pelatihan Pendidikan Jarak Jauh, SEAMOLEC, 2024</li><li>Sertifikat Kewirausahaan, 2024</li></ul>
+</div>
+<div>
+<h3 class="s">Pelayanan akademik</h3>
+<ul class="pl"><li>Narasumber Pembinaan Soft Skills bagi mahasiswa baru UNY jalur Seleksi Mandiri, 2025</li><li>Anggota panitia KONASPI, UNESA, 2024</li><li>Anggota Pusat Data dan Informasi Fakultas, UNY, 2024</li><li>Panitia FIP-JIP, UNY, 2023</li><li>Anggota Tim Penjaminan Mutu Fakultas, UNY, 2020</li></ul>
+</div>
+</div>
+</section>
+
+<div class="print-only" id="cvlist"></div>
+
+<section class="bg" id="kontak">
+<h2>Kontak</h2>
+<p>Untuk kolaborasi riset, undangan narasumber, atau pertanyaan seputar bimbingan.</p>
+<p><a class="btn p" href="mailto:arisuharyadi@uny.ac.id">arisuharyadi@uny.ac.id</a></p>
+</section>
 </main>
 
-<footer><div class="wrap">© 2026 Aris Suharyadi. Hak cipta dilindungi.</div></footer>
+<footer><div class="wrap">© 2026 Aris Suharyadi · Departemen Administrasi Pendidikan, Universitas Negeri Yogyakarta</div></footer>
+
+<script src="data.js"></script>
+<script>
+var CAT=[["all","Semua"],["ajar","Pengajaran"],["riset","Penelitian"],["abdi","Pengabdian"],["haki","HAKI"]];
+var cur="all";
+function el(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x)e.textContent=x;return e}
+function count(k){return D.filter(function(d){return k==="all"||d[1]===k}).length}
+function pkm(){return D.filter(function(d){return d[5]==="PkM"}).length}
+function proj(){return D.filter(function(d){return d[5]==="Hibah"}).length}
+function pub(){return count("riset")-proj()}
+function stats(){
+  var s=document.getElementById("stats");
+  [[pub(),"Publikasi"],[proj(),"Proyek penelitian"],[pkm(),"Kegiatan pengabdian"],[count("haki"),"HAKI"]].forEach(function(x){
+    var d=el("div");d.appendChild(el("b","",x[0]));d.appendChild(el("span","",x[1]));s.appendChild(d)})
+}
+function chips(){
+  var box=document.getElementById("chips");box.textContent="";
+  CAT.forEach(function(c){
+    var b=el("button","chip",c[1]);b.type="button";b.setAttribute("aria-pressed",cur===c[0]);
+    b.appendChild(el("i","",count(c[0])));
+    b.onclick=function(){cur=c[0];chips();list()};box.appendChild(b)})
+}
+function list(){
+  var box=document.getElementById("list");box.textContent="";
+  for(var y=2026;y>=2019;y--){
+    var items=D.filter(function(d){return d[0]===y&&(cur==="all"||d[1]===cur)});
+    var note=cur==="all"&&NOTE[y];
+    if(!items.length&&!note)continue;
+    var row=el("div","yr");row.appendChild(el("h3","",y));
+    var col=el("div");
+    if(note)col.appendChild(el("p","note",note));
+    items.forEach(function(d){
+      var it=el("div","it "+d[1]);var t=el("div","t");
+      if(d[5])t.appendChild(el("span","tag",d[5]));
+      if(d[4]){var a=el("a","",d[2]);a.href=d[4];a.rel="noopener";t.appendChild(a)}else t.appendChild(document.createTextNode(d[2]));
+      it.appendChild(t);if(d[3])it.appendChild(el("div","m",d[3]));col.appendChild(it)});
+    row.appendChild(col);box.appendChild(row)}
+}
+function cvbuild(){
+  var box=document.getElementById("cvlist");box.textContent="";
+  [["ajar","Pengajaran"],["riset","Penelitian"],["abdi","Pengabdian kepada masyarakat"],["haki","HAKI"]].forEach(function(c){
+    var items=D.filter(function(d){return d[1]===c[0]});if(!items.length)return;
+    box.appendChild(el("h2","",c[1]));var last=0;
+    items.forEach(function(d){
+      var r=el("div","cvrow");r.appendChild(el("div","cy",d[0]===last?"":d[0]));last=d[0];
+      var b=el("div");b.appendChild(el("div","ct",(d[5]?"["+d[5]+"] ":"")+d[2]));
+      if(d[3])b.appendChild(el("div","cm",d[3]));r.appendChild(b);box.appendChild(r)})})
+}
+var oldTitle=document.title;
+window.addEventListener("beforeprint",function(){oldTitle=document.title;document.title="CV Aris Suharyadi"});
+window.addEventListener("afterprint",function(){document.title=oldTitle});
+cvbuild();stats();chips();list();
+</script>
 </body>
 </html>
